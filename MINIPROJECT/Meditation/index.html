@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meditation for Mental Health Support</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>Meditation for Mental Health</h1>
+      </div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#yoga">Yoga</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="hero-text">
+      <h2>Find Peace & Balance Within</h2>
+      <p>Transform your mind with guided meditation practices tailored for mental health support.</p>
+      <a href="#services" class="btn">Start Your Journey</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Meditation for Mental Health</h2>
+    <p>Meditation helps in managing stress, anxiety, and emotional well-being. Our platform offers various guided sessions and resources to help you feel calm and rejuvenated.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services-container">
+      <div class="service">
+        <h3>Guided Meditation</h3>
+        <p>Relax and rejuvenate with our expertly designed guided meditation sessions.</p>
+      </div>
+      <div class="service">
+        <h3>Stress Relief Techniques</h3>
+        <p>Learn techniques to manage stress effectively through simple and relaxing methods.</p>
+      </div>
+      <div class="service">
+        <h3>Mindfulness Practices</h3>
+        <p>Practice mindfulness to stay focused, calm, and grounded in everyday life.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="yoga">
+    <h2> Yoga Poses for Mental Health</h2>
+    <div class="yoga-container">
+      <div class="yoga">
+        <img src="./Images/childPose.jpg" alt="Child's Pose">
+        <h3>Child's Pose</h3>
+        <p>Relieves stress and calms the mind. Great for relaxation.</p>
+      </div>
+      <div class="yoga">
+        <img src="./Images/downDog.jpg" alt="Downward Dog">
+        <h3>Downward Dog</h3>
+        <p>Improves focus, relieves tension, and enhances mood.</p>
+      </div>
+      <div class="yoga">
+        <img src="./Images/LotusPose.jpg" alt="Lotus Pose">
+        <h3>Lotus Pose</h3>
+        <p>Encourages deep breathing, aids in meditation, and helps calm the nervous system.</p>
+      </div>
+      <div class="yoga">
+        <img src="./Images/cobraPose.jpeg" alt="Cobra Pose">
+        <h3>Cobra Pose</h3>
+        <p>Opens up the chest, relieving tension and enhancing self-confidence.</p>
+      </div>
+      <div class="yoga">
+        <img src="./Images/Treepose.jpg" alt="Tree Pose">
+        <h3>Tree Pose</h3>
+        <p>Improves balance, increases mental focus, and fosters a sense of calm.</p>
+      </div>
+      <div class="yoga">
+        <img src="./Images/Warrior.jpg" alt="Warrior II Pose">
+        <h3>Warrior II Pose</h3>
+        <p>Strengthens the body, boosts mental clarity, and improves focus.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your Name"  required>
+      
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email"  placeholder="Enter your email"  required>
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message"  placeholder="Enter text" required></textarea>
+
+      <h3>Mental Health Self-Assessment</h3>
+
+      <label for="mood">How would you rate your current mood?</label>
+      <select id="mood" name="mood" required>
+        <option value="happy">Happy</option>
+        <option value="neutral">Neutral</option>
+        <option value="sad">Sad</option>
+        <option value="anxious">Anxious</option>
+      </select>
+
+      <label for="stress">How stressed do you feel right now?</label>
+      <input type="range" id="stress" name="stress" min="1" max="10" value="5">
+      <span id="stress-value">5</span> (1 = Low, 10 = High)
+
+      <label for="sleep">How well have you been sleeping recently?</label>
+      <select id="sleep" name="sleep" required>
+        <option value="good">Good</option>
+        <option value="average">Average</option>
+        <option value="poor">Poor</option>
+      </select>
+
+      <label for="anxiety">Do you often feel anxious or worried?</label>
+      <select id="anxiety" name="anxiety" required>
+        <option value="never">Never</option>
+        <option value="sometimes">Sometimes</option>
+        <option value="often">Often</option>
+        <option value="always">Always</option>
+      </select>
+
+      <label for="emotion">How often do you experience emotional outbursts or mood swings?</label>
+      <select id="emotion" name="emotion" required>
+        <option value="never">Never</option>
+        <option value="sometimes">Sometimes</option>
+        <option value="often">Often</option>
+        <option value="always">Always</option>
+      </select>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <div id="response-message" class="response-message" style="display: none;">
+      <p>Your response has been submitted successfully!</p>
+    </div>
+
+    <div id="mental-health-result" class="result-message" style="display: none;">
+      <h3>Your Mental Health Assessment:</h3>
+      <p id="mental-health-status"></p>
+      <h4>Recommended Tips:</h4>
+      <ul id="tips-list"></ul>
+      <h4>Suggested Yoga Poses:</h4>
+      <ul id="yoga-suggestions"></ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Meditation for Mental Health | All Rights Reserved</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

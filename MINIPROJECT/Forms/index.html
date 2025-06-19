@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Appointment Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="appointment-container">
+    <h1>Book a Doctor's Appointment</h1>
+    <form id="appointment-form">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+      </div>
+      <div class="form-group">
+        <label for="date">Appointment Date</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+      <div class="form-group">
+        <label for="time">Preferred Time</label>
+        <input type="time" id="time" name="time" required>
+      </div>
+      <div class="form-group">
+        <label for="doctor">Select Doctor</label>
+        <select id="doctor" name="doctor" required>
+          <option value="" disabled selected>Choose a doctor</option>
+          <option value="dr-smith">Dr. Meera Sharma - Psychologist</option>
+          <option value="dr-jones">Dr. Ravi Kumar- Psychiatrist</option>
+          <option value="dr-brown">Dr. Nisha Singh- Child Psychologist</option>
+          <option value="dr-brown">Dr. Arjun Patil- Therapist</option>
+          <option value="dr-brown">Dr. Pooja Dasl- Behavioral Therapist</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Additional Notes</label>
+        <textarea id="message" name="message" placeholder="Enter any additional notes"></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Book Appointment</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

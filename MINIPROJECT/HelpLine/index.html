@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Health Helpline</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Reach Out for Support</h1>
+    <p>Find trusted mental health experts, hospitals, and helplines.</p>
+  </header>
+
+  <section class="search-section">
+    <input 
+      type="text" 
+      id="search-bar" 
+      placeholder="Search by name, specialization, location,helpline..." 
+      class="search-bar"
+      oninput="filterResults()"
+    >
+  </section>
+
+  <section class="expert-section">
+    <h2>Mental Health Experts</h2>
+    <div id="expert-list">
+      <!-- Expert 1 -->
+      <div class="expert-card" data-name="Meera Sharma" data-specialization="Clinical Psychologist" data-location="New Delhi">
+        <img src="./Images/MeeraSharma.jpg" alt="Expert" class="expert-image">
+        <h3>Dr. Meera Sharma</h3>
+        <p>Clinical Psychologist</p>
+        <p><strong>Location:</strong> New Delhi</p>
+        <p><strong>Contact:</strong> +91-9876543210</p>
+        <a href="../Forms/index.html" target="_blank" class="btn">Book Appointment</a>
+      </div>
+      <!-- Expert 2 -->
+      <div class="expert-card" data-name="Ravi Kumar" data-specialization="Psychiatrist" data-location="Mumbai">
+        <img src="./Images/Ravi.jpeg" alt="Expert" class="expert-image">
+        <h3>Dr. Ravi Kumar</h3>
+        <p>Psychiatrist</p>
+        <p><strong>Location:</strong> Mumbai</p>
+        <p><strong>Contact:</strong> +91-9123456789</p>
+        <a href="../Forms/index.html" target="_blank" class="btn">Book Appointment</a>
+      </div>
+      <!-- Expert 3 -->
+      <div class="expert-card" data-name="Nisha Singh" data-specialization="Child Psychologist" data-location="Bangalore">
+        <img src="./Images/Nisha.jpeg" alt="Expert" class="expert-image">
+        <h3>Dr. Nisha Singh</h3>
+        <p>Child Psychologist</p>
+        <p><strong>Location:</strong> Bangalore</p>
+        <p><strong>Contact:</strong> +91-9988776655</p>
+        <a href="../Forms/index.html" target="_blank" class="btn">Book Appointment</a>
+      </div>
+      <!-- Expert 4 -->
+      <div class="expert-card" data-name="Arjun Patil" data-specialization="Therapist" data-location="Chennai">
+        <img src="./Images/Arjun.jpeg" alt="Expert" class="expert-image">
+        <h3>Dr. Arjun Patil</h3>
+        <p>Therapist</p>
+        <p><strong>Location:</strong> Chennai</p>
+        <p><strong>Contact:</strong> +91-9871234560</p>
+        <a href="../Forms/index.html" target="_blank" class="btn">Book Appointment</a>
+      </div>
+      <!-- Expert 5 -->
+      <div class="expert-card" data-name="Pooja Das" data-specialization="Behavioral Therapist" data-location="Kolkata">
+        <img src="./Images/Pooja.jpeg" alt="Expert" class="expert-image">
+        <h3>Dr. Pooja Das</h3>
+        <p>Behavioral Therapist</p>
+        <p><strong>Location:</strong> Kolkata</p>
+        <p><strong>Contact:</strong> +91-9801123456</p>
+        <a href="../Forms/index.html" target="_blank" class="btn">Book Appointment</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="hospital-section">
+    <h2>Hospitals & Clinics</h2>
+    <div id="hospital-list">
+      <!-- Hospital 1 -->
+      <div class="hospital-card" data-name="Serenity Mental Health Center" data-location="Greater Noida">
+        <img src="./Images/Hosp5.jpeg" alt="Hospital" class="hospital-image">
+        <h3>Serenity Mental Health Center</h3>
+        <p><strong>Address:</strong> Greater Noida, UP</p>
+        <p><strong>Services:</strong> Counseling, Psychiatric care</p>
+        <a href="https://www.google.com/maps?q=Serenity+Mental+Health+Center+Greater+Noida" target="_blank" class="btn">View Location</a>
+      </div>
+      <!-- Hospital 2 -->
+      <div class="hospital-card" data-name="MindCare Clinic" data-location="Pune">
+        <img src="./Images/Hosp3.jpeg" alt="Hospital" class="hospital-image">
+        <h3>MindCare Clinic</h3>
+        <p><strong>Address:</strong> Pune, MH</p>
+        <p><strong>Services:</strong> Therapy, Medication, Group Support</p>
+        <a href="https://www.google.com/maps?q=MindCare+Clinic+Pune" target="_blank" class="btn">View Location</a>
+      </div>
+      <!-- Hospital 3 -->
+      <div class="hospital-card" data-name="Harmony Wellness Center" data-location="Bangalore">
+        <img src="./Images/Hosp1.jpeg" alt="Hospital" class="hospital-image">
+        <h3>Harmony Wellness Center</h3>
+        <p><strong>Address:</strong> Bangalore, KA</p>
+        <p><strong>Services:</strong> Holistic Mental Care</p>
+        <a href="https://www.google.com/maps?q=Harmony+Wellness+Center+Bangalore" target="_blank" class="btn">View Location</a>
+      </div>
+      <!-- Hospital 4 -->
+      <div class="hospital-card" data-name="Calm Minds Clinic" data-location="Hyderabad">
+        <img src="./Images/Hosp2.jpeg" alt="Hospital" class="hospital-image">
+        <h3>Calm Minds Clinic</h3>
+        <p><strong>Address:</strong> Hyderabad, TS</p>
+        <p><strong>Services:</strong> Anxiety & Stress Management</p>
+        <a href="https://www.google.com/maps?q=Calm+Minds+Clinic+Hyderabad" target="_blank" class="btn">View Location</a>
+      </div>
+      <!-- Hospital 5 -->
+      <div class="hospital-card" data-name="Peace Mental Health Hospital" data-location="Jaipur">
+        <img src="./Images/Hosp4.jpeg" alt="Hospital" class="hospital-image">
+        <h3>Peace Mental Health Hospital</h3>
+        <p><strong>Address:</strong> Jaipur, RJ</p>
+        <p><strong>Services:</strong> In-Patient Psychiatric Care</p>
+        <a href="https://www.google.com/maps?q=Peace+Mental+Health+Hospital+Jaipur" target="_blank" class="btn">View Location</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="helpline-section">
+    <h2>Mental Health Helpline Numbers</h2>
+    <ul>
+      <li><strong>Vandrevala Foundation:</strong> +91-9999 666 555</li>
+      <li><strong>iCall Psychosocial Helpline:</strong> +91-9152987821</li>
+      <li><strong>Fortis Mental Health Helpline:</strong> +91-8376804102</li>
+      <li><strong>Snehi Suicide Prevention Helpline:</strong> +91-9582208181</li>
+      <li><strong>AASRA Helpline:</strong> +91-9820466726</li>
+    </ul>
+  </section>
+
+  <footer class="footer">
+    <p>Have feedback? <a href="#">Rate your experience</a></p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
